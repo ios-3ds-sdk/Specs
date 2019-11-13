@@ -22,11 +22,19 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 
   s.subspec 'iphoneos' do |iphoneos|
-      iphoneos.ios.vendored_frameworks = 'iphoneos/ThreeDS_SDK.framework'
+      iphoneos.ios.vendored_frameworks = "xcode_11/ThreeDS_SDK/iphoneos/ThreeDS_SDK.framework"
   end
 
   s.subspec 'universal' do |universal|
-      universal.ios.vendored_frameworks = 'universal/ThreeDS_SDK.framework'
+      universal.ios.vendored_frameworks = 'xcode_11/ThreeDS_SDK/universal/ThreeDS_SDK.framework'
+  end
+
+  s.subspec 'xcode_10_3_iphoneos' do |xcode_10_3_iphoneos|
+   xcode_10_3_iphoneos.ios.vendored_frameworks = "xcode_10_3/ThreeDS_SDK/iphoneos/ThreeDS_SDK.framework"
+  end
+  
+  s.subspec 'xcode_10_3_universal' do |xcode_10_3_universal|
+   xcode_10_3_universal.ios.vendored_frameworks = 'xcode_10_3/ThreeDS_SDK/universal/ThreeDS_SDK.framework'
   end
 
 end
