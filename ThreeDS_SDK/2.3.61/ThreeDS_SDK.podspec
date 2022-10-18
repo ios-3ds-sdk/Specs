@@ -1,0 +1,16 @@
+Pod::Spec.new do |s|
+
+  s.name         = "ThreeDS_SDK"
+  s.version      = "2.3.61"
+  s.summary      = "ThreeDS SDK for iOS applications."
+  s.description  = "3DS SDK for iOS applications used by merchants"
+  s.homepage     = "https://netcetera.com"
+  s.author       = 'Netcetera'
+  s.license      = "PROPRIETARY"
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '5'
+  s.source       = { :http => "https://merchant-plug-in.extranet.netcetera.biz/nca-348-1/readonly-dav/3dssdk-release/ios/release/#{s.version}/ThreeDS_SDK.zip" }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5' }
+  s.ios.vendored_frameworks = 'ThreeDS_SDK.xcframework'
+
+end
