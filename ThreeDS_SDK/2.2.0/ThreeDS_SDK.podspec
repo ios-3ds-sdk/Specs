@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.swift_version = '4.2'
   s.default_subspec = 'iphoneos'
-  s.source       = { :http => "https://merchant-plug-in.extranet.netcetera.biz/nca-348-1/readonly-dav/3dssdk-release/ios/release/#{s.version}/ThreeDS_SDK.zip" }
+  s.source       = { :http => "https://nexus.extranet.netcetera.biz/nexus/repository/public-repository-maven/com/netcetera/nca-341-2/3ds-sdk/ios/release/#{s.version}/ThreeDS_SDK.zip" }
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 
   s.subspec 'iphoneos' do |iphoneos|
